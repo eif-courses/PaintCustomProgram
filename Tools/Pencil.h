@@ -7,11 +7,12 @@
 
 
 #include "Tool.h"
+#include "../Shapes/Action.h"
 
-class Pencil : public Tool {
+class Pencil : public Tool, public Action{
 public:
   explicit Pencil(const string &str);
-  void draw();
+  void draw() override;
 };
 
 
